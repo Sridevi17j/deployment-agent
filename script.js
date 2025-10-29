@@ -12,7 +12,7 @@ function showFeatures() {
         });
     } else {
         featuresSection.style.display = 'none';
-        button.textContent = 'Learn More';
+        button.textContent = 'Discover Features';
     }
 }
 
@@ -32,7 +32,7 @@ function handleSubmit(event) {
     button.disabled = true;
     
     setTimeout(() => {
-        alert(`Thank you! We'll send deployment guides to ${email}`);
+        alert(`Welcome to FocusFlow! Your free trial account will be ready at ${email}`);
         event.target.reset();
         button.textContent = originalText;
         button.disabled = false;
